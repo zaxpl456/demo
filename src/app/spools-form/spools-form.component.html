@@ -1,0 +1,12 @@
+<mat-card>
+<mat-card-content>
+<h2 *ngIf="error">{{error}}</h2>
+<mat-form-field>
+<input placeholder="Nazwa" matInput [(ngModel)]="sname" #name="ngModel">
+</mat-form-field>
+<mat-form-field>
+<input type="number" placeholder="Billing" matInput [(ngModel)]="billings" #billing="ngModel">
+</mat-form-field>
+<button mat-button (click)="saveSpools()">Zapisz</button>
+</mat-card-content>
+</mat-card>
